@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zamokuhle WYP - Services</title>
+  <title>Zamokuhle WYP - For Sale</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     :root{
@@ -46,19 +46,18 @@
       display:flex;align-items:center;justify-content:center;
       text-align:center;
       padding:0 20px;
+      background-image:url('example.jpg');
       background-size:cover;
       background-position:center center;
       overflow:visible;
     }
     .hero::after{
-      content:'';
-      position:absolute;
-      inset:0;
+      content:'';position:absolute;inset:0;
       background:linear-gradient(180deg,rgba(9,20,37,0.55),rgba(9,20,37,0.75));
       z-index:1;
     }
     .hero-inner{position:relative;z-index:2;max-width:980px;}
-    .hero h2{font-family:'Montserrat';font-size:44px;margin:0 0 12px;line-height:1.05;}
+    .hero h2{font-family:'Montserrat';font-size:44px;margin:0 0 12px;line-height:1.05;color:#ff99cc;}
     .hero .bigabbr{font-size:56px;font-weight:800;margin-top:6px;}
     .hero p{max-width:760px;margin:18px auto 0;font-size:15px;color:#eaf0f7;}
 
@@ -81,28 +80,55 @@
 
     /* main content */
     main{
-      max-width:800px;
+      max-width:1100px;
       margin:0 auto;
       padding:40px 20px;
       text-align:center;
     }
-    main h1,h2{
-      font-size:32px;
-      margin-bottom:12px;
-    }
-    main p, main ul{
-      font-size:16px;
-      line-height:1.6;
+    main h1{
+      font-size:42px;
+      font-family:'Montserrat';
+      margin-bottom:30px;
       color:#fff;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:1px;
     }
-    main ul{
-      list-style:none;
+
+    /* photo grid */
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:24px;
       padding:0;
       margin:0 auto;
-      max-width:500px;
     }
-    main ul li{
-      padding:6px 0;
+    .item{
+      background:#fff;
+      color:#0b2540;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 6px 20px rgba(0,0,0,0.15);
+      transition:transform 0.3s;
+    }
+    .item:hover{
+      transform:translateY(-5px);
+    }
+    .item img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+    .item h3{
+      margin:10px 0 4px;
+      font-size:18px;
+      font-weight:700;
+    }
+    .item p{
+      margin:0 0 12px;
+      color:#333;
+      font-size:15px;
+      font-weight:600;
     }
 
     /* floating chat/contact */
@@ -152,7 +178,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="About.html">About</a></li>
-        <li><a href="services.html"class="active">Services</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="programs.html">Programs</a></li>
       </ul>
@@ -160,92 +186,157 @@
   </div>
 
   <!-- hero -->
-  <section class="hero" style="background-image:url('example.jpg')">
+  <section class="hero">
     <div class="hero-inner">
-      <h2>Zamokuhle Women and Youth Projects also known as</h2>
-      <div class="bigabbr">ZWYP</div>
-      <p>ZWYP works with other civic organisations, government departments and agencies as well as private sectors to maximize impact, synergy and collaboration for the benefit of the communities we identify to serve.</p>
+      <h2>Zamokuhle Women and Youth Projects</h2>
+      <div class="bigabbr">information to be added</div>
+      <p>Browse our available items below.</p>
     </div>
     <div class="hero-reflection"></div>
   </section>
 
-  <!-- services -->
+  <!-- gallery -->
   <main>
-    <section>
-<section class="services-section">
-  <h1>Services</h1>
-  <h2>Supporting Women and Youth Initiatives</h2>
-</section>
+    <h1>Items for Sale</h1>
+    <div class="gallery">
+      <!-- Example item (copy and edit for 30 total) -->
+      <div class="item">
+        <img src="photo 1.jpg" alt="Item 1">
+        <h3>Small coffe tables</h3>
+        <p>R350 each</p>
+      </div>
 
-<style>
-  .services-section {
+      <div class="item">
+        <img src="photo2.jpg" alt="Item 2">
+        <h3>Planter Box</h3>
+        <p>R500</p>
+      </div>
+	  
+	      <div class="item">
+        <img src="photo3.jpg" alt="Item 2">
+        <h3>Kiddies Table and 2 Chairs</h3>
+        <p>R500</p>
+      </div>
+	  
+	      <div class="item">
+        <img src="photo4.jpg" alt="Item 2">
+        <h3>Large Storage Box</h3>
+        <p>R1300</p>
+      </div>
+	  
+	      <div class="item">
+        <img src="photo5.jpg" alt="Item 2">
+        <h3>Garden Bench</h3>
+        <p>R300</p>
+      </div>
+	  
+	      <div class="item">
+        <img src="photo6.jpg" alt="Item 2">
+        <h3>Doll Cots</h3>
+        <p>R200 each</p>
+      </div>
+	  
+	      <div class="item">
+        <img src="photo7.jpg" alt="Item 2">
+        <h3>Vegy rack</h3>
+        <p>R350</p>
+      </div>
+	  
+	      <div class="item">
+        <img src="photo8.jpg" alt="Item 2">
+        <h3>Garden Table</h3>
+        <p>R350</p>
+      </div>
+	  
+	      <div class="item">
+        <img src="photo9.jpg" alt="Item 2">
+        <h3>Custom Made Beds From</h3>
+        <p>R900</p>
+      </div>
+	  
+	      <div class="item">
+        <img src="photo10.jpg" alt="Item 2">
+        <h3>Dog Beds From</h3>
+        <p>R350</p>
+      </div>
+	  
+	      <div class="item">
+        <img src="photo11.jpg" alt="Item 2">
+        <h3>Small And medium Planter Boxes From </h3>
+        <p>R350</p>
+      </div>
+	  
+	      <div class="item">
+        <img src="photo12.jpg" alt="Item 2">
+        <h3>Dog Beds From</h3>
+        <p>R350</p>
+      </div>
+	  
+	      <div class="item">
+        <img src="photo13.jpg" alt="Item 2">
+        <h3>Cat Bunk Beds From</h3>
+        <p>R500</p>
+      </div>
+	  
+	      <div class="item">
+        <img src="photo14.jpg" alt="Item 2">
+        <h3>Cat Tower From</h3>
+        <p>R500</p>
+      </div>
+	  
+	      <div class="item">
+        <img src="photo15.jpg" alt="Item 2">
+        <h3>Garden Bench From</h3>
+        <p>R300</p>
+      </div>
+	  
+
+      <!-- You can duplicate the item divs below up to 30 times -->
+      <!-- Example -->
+      <!--
+      <div class="item">
+        <img src="photo3.jpg" alt="Item 3">
+        <h3>Item Name 3</h3>
+        <p>R120</p>
+      </div>
+      -->
+    </div>
+  </main>
+
+  <!-- floating chat + contact -->
+  <div class="chat-dot">💬</div>
+  <a class="contact-pill" href="mailto:zamokuhle2004@zwyp.onmicrosoft.com">Contact us</a>
+  <!-- back button -->
+  <style>
+  .back-btn-container {
     text-align: center;
-    margin: 40px auto;
-    max-width: 800px;
+    margin: 40px 0;
   }
 
-  .services-section h1 {
-    font-size: 48px;   /* makes it larger */
-    font-weight: 800;  /* makes it bold */
-    margin-bottom: 12px;
-    color: #fff;       /* white text on blue background */
-  }
-
-  .services-section h2 {
-    font-size: 24px;   /* smaller than h1 but still prominent */
-    font-weight: 600;  /* medium bold */
-    margin-top: 0;
-    color: #eaf0f7;    /* light text for contrast */
-  }
-</style>
-<style>
- <style>
-  .services-list {
-    list-style: none;
-    padding: 0;
-  }
-
-  .services-list li {
-    margin: 12px 0;
-  }
-
-  .services-list a {
+  .back-btn {
     display: inline-block;
-    background-color: var(--accent); /* gold accent color */
+    background-color: var(--accent); /* gold accent */
     color: #0b2540; /* dark text for contrast */
-    padding: 12px 24px;
-    border-radius: 10px;
+    padding: 12px 28px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.3px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   }
 
-  .services-list a:hover {
-    background-color: var(--dark-teal); /* teal hover effect */
-    color: #fff; /* switch to white text */
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  .back-btn:hover {
+    background-color: var(--dark-teal);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
   }
 </style>
 
-</style>
-
-<ul class="services-list">
-  <li><a href="counselling.html" target="_blank">Counselling and making relevant referrals</a></li>
-  <li><a href="health-promotion.html" target="_blank">Health promotion and knowledge dissemination on prevention of social ills and healthy living</a></li>
-  <li><a href="awareness-campaigns.html" target="_blank">Awareness campaigns</a></li>
-  <li><a href="support-groups.html" target="_blank">Formation of support groups</a></li>
-  <li><a href="training-capacity.html" target="_blank">Training and Capacity Building</a></li>
-  <li><a href="access-to-training.html" target="_blank">Facilitating access to training</a></li>
-  <li><a href="for sale.html" target="_blank">Facilitating job creation and mentorship</a></li>
-</ul>
-
-  <!-- floating chat + contact -->
-    <div class="chat-dot">💬</div>
-  <a class="contact-pill" href="mailto:zamokuhle2004@zwyp.onmicrosoft.com">Contact us</a>
+  <div class="back-btn-container">
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
 
   <!-- footer -->
   <footer>
