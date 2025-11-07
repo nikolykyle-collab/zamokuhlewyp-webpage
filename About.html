@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Zamokuhle WYP - About</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
- <style>
+  <style>
     :root{
       --teal:#065a83;
       --dark-teal:#0b5a84;
@@ -75,10 +75,48 @@
 
     /* main content */
     main{
-      max-width:800px;margin:0 auto;padding:40px 20px;text-align:center;
+      max-width:1100px;margin:0 auto;padding:40px 20px;text-align:center;
     }
-    main h2{font-size:32px;margin-bottom:12px;}
+    main h2{font-size:32px;margin-bottom:12px;font-family:'Montserrat';}
     main p{font-size:16px;line-height:1.6;color:#fff;margin-bottom:18px;}
+
+    /* Team section */
+    .team-section{
+      margin-top:60px;
+    }
+    .team-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+      gap:28px;
+      margin-top:40px;
+    }
+    .team-member{
+      background:rgba(255,255,255,0.1);
+      border-radius:10px;
+      padding:20px;
+      box-shadow:0 4px 14px rgba(0,0,0,0.2);
+      transition:transform 0.3s;
+    }
+    .team-member:hover{
+      transform:translateY(-6px);
+    }
+    .team-member img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      border-radius:10px;
+    }
+    .team-member h3{
+      margin-top:14px;
+      font-size:20px;
+      font-weight:700;
+      color:#ff99cc;
+    }
+    .team-member p{
+      margin:4px 0 0;
+      font-size:15px;
+      color:#eaeaea;
+    }
 
     /* floating chat/contact */
     .contact-pill{position:fixed;right:22px;bottom:22px;background:#fff;padding:10px 14px;border-radius:26px;color:#0b2540;text-decoration:none;box-shadow:0 6px 22px rgba(8,20,40,0.18);}
@@ -92,12 +130,14 @@
       .hero{height:460px;}
       .hero h2{font-size:32px;}
       .top-contact{display:none;}
+      .team-member img{height:220px;}
     }
     @media (max-width:420px){
       .hero{height:520px;padding:0 12px;}
       .hero h2{font-size:26px;}
       .donate{padding:10px 14px;}
       .logo{width:58px;height:58px;}
+      .team-member img{height:200px;}
     }
   </style>
 </head>
@@ -119,7 +159,7 @@
   </div>
 
   <!-- nav -->
- <div class="brandnav">
+  <div class="brandnav">
     <h1>ZWYP</h1>
     <nav>
       <ul>
@@ -149,6 +189,53 @@
       <p>Zamokuhle Women and Youth Projects (ZWYP) is a non-profit organisation formed in 2004 by women volunteering to provide services to vulnerable groups through donations of time, food, clothes, and other essential amenities.</p>
       <p>This service expanded across districts to include food gardens, agricultural projects such as chicken farming, youth enterprise development, business management, and support services.</p>
       <p>Our current focus is a rural empowerment project addressing economic, health, and social challenges. ZWYP collaborates with civic organisations, government agencies, and private sectors to maximize impact and benefit the communities we serve.</p>
+    </section>
+
+   <!-- team -->
+<section class="team-section">
+  <h2>Our Team</h2>
+  <p>Meet the dedicated individuals working behind the scenes to make our vision a reality.</p>
+  <div class="team-grid">
+  
+    <div class="team-member">
+      <a href="DOC-20250716-WA0001..pdf" target="_blank">
+        <img src="Ayanda.jpg" alt="Ayanda">
+      </a>
+      <h3>Ayanda</h3>
+      <p>Managing Director</p>
+    </div>
+
+    <div class="team-member">
+      <img src="Lihle.jpg" alt="Lihle">
+      <h3>Lihle</h3>
+    </div>
+
+    <div class="team-member">
+      <img src="Lindowe Bongs.jpg" alt="Lindowe Bongs 3">
+      <h3>Lindowe Bongs</h3>
+    </div>
+
+    <div class="team-member">
+      <img src="Nicolette.jpg" alt="Nicolette">
+      <h3>Nicolette</h3>
+    </div>
+
+    <div class="team-member">
+      <img src="Nompumelelo.jpg" alt="Nompumelelo">
+      <h3>Nompumelelo</h3>
+    </div>
+
+    <div class="team-member">
+      <img src="Nonkuleko.jpg" alt="Nonkuleko">
+      <h3>Nonkuleko</h3>
+    </div>
+    
+  </div>
+</section>
+
+        
+        </div>
+      </div>
     </section>
   </main>
 
